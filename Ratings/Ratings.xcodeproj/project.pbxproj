@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161552551DA5403700AD48EA /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161552541DA5403700AD48EA /* PlayerCell.swift */; };
 		16A3B92D1D9E7A9C00913726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B92C1D9E7A9C00913726 /* AppDelegate.swift */; };
 		16A3B92F1D9E7A9C00913726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B92E1D9E7A9C00913726 /* ViewController.swift */; };
 		16A3B9321D9E7A9C00913726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A3B9301D9E7A9C00913726 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161552541DA5403700AD48EA /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		16A3B9291D9E7A9C00913726 /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A3B92C1D9E7A9C00913726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A3B92E1D9E7A9C00913726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				16A3B93E1D9E888000913726 /* PlayersViewController.swift */,
 				16A3B9401D9E891D00913726 /* Player.swift */,
 				16A3B9421D9E89A900913726 /* SampleData.swift */,
+				161552541DA5403700AD48EA /* PlayerCell.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161552551DA5403700AD48EA /* PlayerCell.swift in Sources */,
 				16A3B9411D9E891D00913726 /* Player.swift in Sources */,
 				16A3B92F1D9E7A9C00913726 /* ViewController.swift in Sources */,
 				16A3B92D1D9E7A9C00913726 /* AppDelegate.swift in Sources */,
