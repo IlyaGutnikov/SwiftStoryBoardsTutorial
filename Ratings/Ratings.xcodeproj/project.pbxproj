@@ -12,6 +12,9 @@
 		16A3B9321D9E7A9C00913726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A3B9301D9E7A9C00913726 /* Main.storyboard */; };
 		16A3B9341D9E7A9C00913726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A3B9331D9E7A9C00913726 /* Assets.xcassets */; };
 		16A3B9371D9E7A9C00913726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A3B9351D9E7A9C00913726 /* LaunchScreen.storyboard */; };
+		16A3B93F1D9E888000913726 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B93E1D9E888000913726 /* PlayersViewController.swift */; };
+		16A3B9411D9E891D00913726 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B9401D9E891D00913726 /* Player.swift */; };
+		16A3B9431D9E89A900913726 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B9421D9E89A900913726 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		16A3B9331D9E7A9C00913726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16A3B9361D9E7A9C00913726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16A3B9381D9E7A9C00913726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A3B93E1D9E888000913726 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		16A3B9401D9E891D00913726 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		16A3B9421D9E89A900913726 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				16A3B9331D9E7A9C00913726 /* Assets.xcassets */,
 				16A3B9351D9E7A9C00913726 /* LaunchScreen.storyboard */,
 				16A3B9381D9E7A9C00913726 /* Info.plist */,
+				16A3B93E1D9E888000913726 /* PlayersViewController.swift */,
+				16A3B9401D9E891D00913726 /* Player.swift */,
+				16A3B9421D9E89A900913726 /* SampleData.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -96,7 +105,8 @@
 				TargetAttributes = {
 					16A3B9281D9E7A9C00913726 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = NN66A2H896;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -136,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A3B9411D9E891D00913726 /* Player.swift in Sources */,
 				16A3B92F1D9E7A9C00913726 /* ViewController.swift in Sources */,
 				16A3B92D1D9E7A9C00913726 /* AppDelegate.swift in Sources */,
+				16A3B9431D9E89A900913726 /* SampleData.swift in Sources */,
+				16A3B93F1D9E888000913726 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +197,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NN66A2H896;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -233,9 +248,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NN66A2H896;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -258,7 +275,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NN66A2H896;
 				INFOPLIST_FILE = Ratings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IlyaGutnikovLLC.Ratings;
@@ -272,7 +290,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NN66A2H896;
 				INFOPLIST_FILE = Ratings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IlyaGutnikovLLC.Ratings;
@@ -301,6 +320,7 @@
 				16A3B93D1D9E7A9C00913726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
