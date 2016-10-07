@@ -16,6 +16,12 @@ class PlayerDetailsViewController: UITableViewController {
     
     @IBOutlet weak var detailLabel: UILabel!
     
+    var game:String = "Chess" {
+        didSet {
+            detailLabel.text? = game
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,8 +49,20 @@ class PlayerDetailsViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SavePlayerDetail" {
-            player = Player(name: nameTextField.text!, game: "Chess", rating: 1)
+            player = Player(name: nameTextField.text!, game: game, rating: 1)
+        }
+        
+        if segue.identifier == "PickGame" {
+            if let gamePickerViewController = segue.destination as? GamePickerViewController {
+                gamePickerViewController.selectedGame = game
+            }
         }
     }
     
+    @IBAction func unwindWithSelectedGame(segue:UIStoryboardSegue) {
+        if let gamePickerViewController = segue.source as? GamePickerViewController,
+            let selectedGame = gamePickerViewController.selectedGame {
+            game = selectedGame
+        }
+    }
 }
