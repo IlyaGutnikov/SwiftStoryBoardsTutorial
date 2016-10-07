@@ -16,6 +16,7 @@
 		16A3B93F1D9E888000913726 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B93E1D9E888000913726 /* PlayersViewController.swift */; };
 		16A3B9411D9E891D00913726 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B9401D9E891D00913726 /* Player.swift */; };
 		16A3B9431D9E89A900913726 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B9421D9E89A900913726 /* SampleData.swift */; };
+		16AAB69B1DA79BE300C5E3F3 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AAB69A1DA79BE300C5E3F3 /* PlayerDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		16A3B93E1D9E888000913726 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		16A3B9401D9E891D00913726 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		16A3B9421D9E89A900913726 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		16AAB69A1DA79BE300C5E3F3 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				16A3B9401D9E891D00913726 /* Player.swift */,
 				16A3B9421D9E89A900913726 /* SampleData.swift */,
 				161552541DA5403700AD48EA /* PlayerCell.swift */,
+				16AAB69A1DA79BE300C5E3F3 /* PlayerDetailsViewController.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				161552551DA5403700AD48EA /* PlayerCell.swift in Sources */,
 				16A3B9411D9E891D00913726 /* Player.swift in Sources */,
 				16A3B92F1D9E7A9C00913726 /* ViewController.swift in Sources */,
+				16AAB69B1DA79BE300C5E3F3 /* PlayerDetailsViewController.swift in Sources */,
 				16A3B92D1D9E7A9C00913726 /* AppDelegate.swift in Sources */,
 				16A3B9431D9E89A900913726 /* SampleData.swift in Sources */,
 				16A3B93F1D9E888000913726 /* PlayersViewController.swift in Sources */,
