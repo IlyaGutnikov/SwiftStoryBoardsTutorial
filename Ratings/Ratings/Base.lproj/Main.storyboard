@@ -196,12 +196,12 @@
                     <navigationItem key="navigationItem" title="Add Player" id="KrG-ng-Wea">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="y3y-Bg-Uco">
                             <connections>
-                                <segue destination="4d6-0C-WQ8" kind="unwind" unwindAction="cancelToPlayersViewControllerWithSegue:" id="WZI-US-rRT"/>
+                                <segue destination="4d6-0C-WQ8" kind="unwind" unwindAction="cancelToPlayersViewControllerWithSegue:" id="QuP-sx-q7g"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="yoI-7U-EWQ">
                             <connections>
-                                <segue destination="4d6-0C-WQ8" kind="unwind" unwindAction="savePlayerDetailWithSegue:" id="m8A-YA-usD"/>
+                                <segue destination="4d6-0C-WQ8" kind="unwind" identifier="SavePlayerDetail" unwindAction="savePlayerDetailWithSegue:" id="Ae0-X0-JsA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -228,7 +228,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RaQ-4t-pXj" id="Xtc-q9-zmx">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

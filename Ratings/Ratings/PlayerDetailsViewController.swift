@@ -40,22 +40,6 @@ class PlayerDetailsViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cancelToPlayersViewController(segue:UIStoryboardSegue) {
-    }
-    
-    @IBAction func savePlayerDetail(segue:UIStoryboardSegue) {
-        if let playerDetailsViewController = segue.source as? PlayerDetailsViewController {
-            
-            //add the new player to the players array
-            if let player = playerDetailsViewController.player {
-                players.append(player)
-                
-                //update the tableView
-                let indexPath = NSIndexPath(row: players.count-1, section: 0)
-                tableView.insertRows(at: [indexPath as IndexPath], with: .automatic)
-            }
-        }
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SavePlayerDetail" {
