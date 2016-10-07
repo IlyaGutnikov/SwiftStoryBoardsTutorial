@@ -9,6 +9,8 @@
 import UIKit
 
 class PlayerDetailsViewController: UITableViewController {
+    
+    var player:Player?
 
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -23,6 +25,15 @@ class PlayerDetailsViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        print("init PlayerDetailsViewController")
+        super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        print("deinit PlayerDetailsViewController")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,6 +44,23 @@ class PlayerDetailsViewController: UITableViewController {
     }
     
     @IBAction func savePlayerDetail(segue:UIStoryboardSegue) {
+        if let playerDetailsViewController = segue.source as? PlayerDetailsViewController {
+            
+            //add the new player to the players array
+            if let player = playerDetailsViewController.player {
+                players.append(player)
+                
+                //update the tableView
+                let indexPath = NSIndexPath(row: players.count-1, section: 0)
+                tableView.insertRows(at: [indexPath as IndexPath], with: .automatic)
+            }
+        }
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SavePlayerDetail" {
+            player = Player(name: nameTextField.text!, game: "Chess", rating: 1)
+        }
+    }
+    
 }
